@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules index.js",
-    "seed": "node data/seed.js"
+    "seed": "node data/seed.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
