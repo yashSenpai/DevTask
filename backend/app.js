@@ -18,4 +18,6 @@ import profileRouter from "./routes/profile.route.js"
 
 app.use("/api/profiles", profileRouter)
 
+app.get("/", (req, res) => res.send("✅ Backend running"));
+
 export { app }
