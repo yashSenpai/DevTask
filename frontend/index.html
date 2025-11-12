@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Applicants — Profiles</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <button class="breadcrumbs">Posted Gigs</button><span class="crumb-sep">/</span> <span class="pill">Applicants</span></div>
+      <div class="right-controls">
+        <button class="btn btn-ghost">Contact us</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-heading">
+      <h1 class="job-title">Product Designer <span class="badge">10 Applicants</span></h1>
+      <div class="meta">0 - 1 Years of Experience  •  Zepto  •  New Delhi, India  •  <span class="green-dot">Available Immediately</span></div>
+    </section>
+
+    <section class="filters">
+      <button class="filter">Experience Level</button>
+      <button class="filter">Availability</button>
+      <button class="filter">Preferred Location</button>
+      <button class="filter">Skills</button>
+      <button class="filter">Expected CTC</button>
+      <div style="flex:1"></div>
+      <button class="btn btn-outline">Sort</button>
+    </section>
+
+    <section id="profiles-grid" class="profiles-grid">
+      <!-- cards injected here -->
+    </section>
+  </main>
+
+  <!-- Unlock Modal -->
+  <div id="modal-overlay" class="modal-overlay hidden" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" class="modal-x" title="Close">×</button>
+      <div class="modal-emoji">🔒</div>
+      <h2 id="modal-title" class="modal-title">Are you sure you want to unlock this profile?</h2>
+      <p class="modal-desc">Unlocking will cost <strong id="modal-cost">10</strong> credits. Once confirmed, you’ll be able to chat with this candidate directly.</p>
+
+      <div class="credits-available">Credits Available: <span id="credits-amount">200</span></div>
+
+      <div class="modal-actions">
+        <button id="confirm-unlock" class="btn unlock-modal-btn">Unlock • <span id="modal-cost-text">10</span> Credits</button>
+        <button id="cancel-unlock" class="btn btn-ghost">Cancel</button>
+      </div>
+
+      <p class="modal-note">Most startups find it worth it — top talents go fast.</p>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
