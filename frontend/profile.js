@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000/api"; // update if your backend uses another port
+const API_BASE = "https://https://devtask-backend-s368.onrender.com/api/" || "http://localhost:8000/api"; // update if your backend uses another port
 const container = document.getElementById("profile-detail");
 
 // Helper for escaping text
