@@ -1,4 +1,4 @@
-export const apiBase = (window._API_BASE = window._API_BASE || 'https://devtask-backend-s368.onrender.com/api');  //http://localhost:8000/api
+export const apiBase = window._API_BASE || 'http://localhost:8000/api';
 
 const profilesGrid = document.getElementById('profiles-grid');
 const modalOverlay = document.getElementById('modal-overlay');

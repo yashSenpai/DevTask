@@ -59,6 +59,11 @@
     </div>
   </div>
 
-  <script src="script.js" type="module"></script>
+  <script src="script.js" type="module">
+    const isLocal = location.hostname === 'localhost';
+  window._API_BASE = isLocal
+    ? 'http://localhost:8000/api'
+    : 'https://devtask-backend-s368.onrender.com/api';
+  </script>
 </body>
 </html>
